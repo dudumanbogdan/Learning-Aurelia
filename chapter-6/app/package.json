@@ -17,7 +17,8 @@
     "aurelia-framework": "^1.0.0",
     "aurelia-router": "^1.0.0",
     "aurelia-fetch-client": "^1.0.0",
-    "aurelia-validation": "^0.14.0"
+    "aurelia-validation": "^0.14.0",
+    "snyk": "^1.124.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -54,5 +55,10 @@
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-babel-preprocessor": "^6.0.1"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
