@@ -19,7 +19,8 @@
     "aurelia-fetch-client": "^1.0.0",
     "aurelia-validation": "^0.14.0",
     "aurelia-i18n": "^1.2.0",
-    "i18next-xhr-backend": "^1.2.0"
+    "i18next-xhr-backend": "^1.2.0",
+    "snyk": "^1.124.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -57,5 +58,10 @@
     "karma-jasmine": "^1.0.2",
     "karma-babel-preprocessor": "^6.0.1",
     "gulp-protractor": "^3.0.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
