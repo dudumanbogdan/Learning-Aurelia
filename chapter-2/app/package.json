@@ -14,7 +14,8 @@
     "bluebird": "^3.4.1",
     "requirejs": "^2.3.2",
     "text": "github:requirejs/text#latest",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "snyk": "^1.124.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -51,5 +52,10 @@
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-babel-preprocessor": "^6.0.1"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
