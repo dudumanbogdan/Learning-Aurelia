@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:tar:20151103':
+    - aurelia-polyfills > jspm > jspm-npm > tar:
+        patched: '2019-02-04T22:36:06.098Z'
+    - aurelia-bootstrapper-webpack > aurelia-polyfills > jspm > jspm-npm > tar:
+        patched: '2019-02-04T22:36:06.098Z'
