@@ -24,7 +24,8 @@
     "aurelia-polymer": "^1.0.0",
     "jquery": "^3.1.1",
     "bootstrap-datepicker": "^1.6.4",
-    "sortablejs": "^1.4.2"
+    "sortablejs": "^1.4.2",
+    "snyk": "^1.124.0"
   },
   "peerDependencies": {},
   "devDependencies": {
@@ -62,5 +63,10 @@
     "karma-jasmine": "^1.0.2",
     "karma-babel-preprocessor": "^6.0.1",
     "gulp-protractor": "^3.0.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
